@@ -6,32 +6,170 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@drawable/fondo_metalico">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Buscar Dispositivos SoundPi"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        />
-
-    <Button
+    <Switch
         android:id="@+id/search_bluetooth_device_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="200dp"
-        android:height="100dp"
+        android:minHeight="48dp"
+        android:switchMinWidth="48dp"
+
+        android:button="@android:drawable/ic_lock_power_off"
+        android:checked="false"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
         android:text="@string/buscar_dispositivos"
-        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:thumbTint="@color/white"
+        android:trackTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:checked="false" />
 
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="264dp"
+        android:layout_height="146dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="131dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bluetooth_device_btn">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/fuzz"
+            android:text="FUZZ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#E6FF07"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/reverb"
+            android:text="REVERB"
+            android:textColor="#E6FF07"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@drawable/booster"
+            android:text="BOOSTER"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/delay"
+            android:text="DELAY"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/distortion"
+            android:text="DISTORTION"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@drawable/echo"
+            android:text="ECHO"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/metronomo"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="Timer"
+            android:textColor="#FFEA00" />
+
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/octaver"
+            android:text="Octaver"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/tremolo"
+            android:text="Tremolo"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
