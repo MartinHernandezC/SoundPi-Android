@@ -33,12 +33,12 @@
 
     <GridLayout
         android:id="@+id/grid_layout"
-        android:layout_width="264dp"
-        android:layout_height="146dp"
+        android:layout_width="370dp"
+        android:layout_height="219dp"
         android:layout_margin="16dp"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="131dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
         android:columnCount="3"
         android:rowCount="3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,94 +47,101 @@
 
         <Button
             android:id="@+id/button_1"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="0"
             android:layout_column="0"
+            android:layout_margin="10dp"
             android:background="@drawable/fuzz"
-            android:text="FUZZ"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="#E6FF07"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="FUZZ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#E6FF07" />
 
         <Button
             android:id="@+id/button_2"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="0"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:background="@drawable/reverb"
-            android:text="REVERB"
-            android:textColor="#E6FF07"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="REVERB"
+            android:textColor="#E6FF07" />
 
         <Button
             android:id="@+id/button_3"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="0"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:background="@drawable/booster"
-            android:text="BOOSTER"
-            android:textColor="@color/white"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="BOOSTER"
+            android:textColor="@color/white" />
 
 
         <Button
             android:id="@+id/button_4"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="0"
+            android:layout_margin="10dp"
             android:background="@drawable/delay"
-            android:text="DELAY"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="DELAY" />
 
         <Button
             android:id="@+id/button_5"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:background="@drawable/distortion"
-            android:text="DISTORTION"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="DISTORTION" />
 
         <Button
             android:id="@+id/button_6"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:background="@drawable/echo"
-            android:text="ECHO"
-            android:textColor="@color/white"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="ECHO"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/button_7"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="0"
+            android:layout_margin="10dp"
             android:background="@drawable/metronomo"
             android:shadowColor="@color/black"
             android:shadowDx="2"
@@ -146,29 +153,31 @@
 
         <Button
             android:id="@+id/button_8"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:background="@drawable/octaver"
-            android:text="Octaver"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="Octaver" />
 
         <Button
             android:id="@+id/button_9"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:background="@drawable/tremolo"
-            android:text="Tremolo"
             android:shadowColor="@color/black"
             android:shadowDx="2"
             android:shadowDy="2"
-            android:shadowRadius="1"/>
+            android:shadowRadius="1"
+            android:text="Tremolo" />
 
     </GridLayout>
 
